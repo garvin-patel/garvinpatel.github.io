@@ -165,6 +165,7 @@ section{padding:110px 60px;position:relative;z-index:2}
 
 /* EXPERIENCE */
 .exp-sec-label{color:var(--gold)}
+.experience-list{display:flex;flex-direction:column;gap:24px}
 .exp-card{border:1px solid var(--border);border-radius:18px;padding:48px;background:rgba(17,17,24,.6);position:relative;overflow:hidden}
 .exp-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:linear-gradient(180deg,var(--gold),transparent)}
 .exp-card-inner{display:grid;grid-template-columns:240px 1fr;gap:60px}
@@ -430,21 +431,41 @@ footer{border-top:1px solid var(--border);padding:28px 60px;display:flex;justify
 <section id="experience">
   <div class="sec-label exp-sec-label reveal">04 — Experience</div>
   <h2 class="sec-h2 reveal">Work History</h2>
-  <div class="exp-card reveal">
-    <div class="exp-card-inner">
-      <div>
-        <div class="exp-date">AUG — DEC 2025</div>
-        <div class="exp-org">Northern Kentucky University</div>
-        <div class="exp-loc">Highland Heights, KY</div>
+  <div class="experience-list">
+    <div class="exp-card reveal">
+      <div class="exp-card-inner">
+        <div>
+          <div class="exp-date">APR 2026 — PRESENT</div>
+          <div class="exp-org">Blue North</div>
+          <div class="exp-loc">Covington, KY</div>
+        </div>
+        <div>
+          <div class="exp-role">Operations &amp;<br>AI Automation</div>
+          <ul class="exp-bullets">
+            <li>Designing and building automation systems with n8n, Zapier, and Make to reduce manual work across reporting, compliance, and community program workflows</li>
+            <li>Developing internal AI-powered tools with OpenAI and Anthropic Claude APIs to support entrepreneurship programs and operational decision-making</li>
+            <li>Maintaining data infrastructure and internal dashboards for reporting, compliance tracking, and community program analytics while ensuring data integrity across integrated systems</li>
+            <li>Collaborating across technical and operational teams at the intersection of software development, data systems, and entrepreneurship support, with clear documentation for long-term maintainability</li>
+          </ul>
+        </div>
       </div>
-      <div>
-        <div class="exp-role">Teaching Assistant<br>Web Development</div>
-        <ul class="exp-bullets">
-          <li>Mentored 10+ undergrad students in HTML5, CSS, JavaScript &amp; responsive design — 90% achieved B+ or higher</li>
-          <li>Facilitated live coding sessions on DOM manipulation, CSS flexbox/grid, and async JavaScript</li>
-          <li>Reviewed 12+ student projects weekly with feedback on WCAG 2.1 accessibility and semantic HTML</li>
-          <li>Co-developed curriculum materials that improved student engagement by 25% per course surveys</li>
-        </ul>
+    </div>
+    <div class="exp-card reveal">
+      <div class="exp-card-inner">
+        <div>
+          <div class="exp-date">AUG — DEC 2025</div>
+          <div class="exp-org">Northern Kentucky University</div>
+          <div class="exp-loc">Highland Heights, KY</div>
+        </div>
+        <div>
+          <div class="exp-role">Teaching Assistant<br>Web Development</div>
+          <ul class="exp-bullets">
+            <li>Mentored 10+ undergrad students in HTML5, CSS, JavaScript &amp; responsive design — 90% achieved B+ or higher</li>
+            <li>Facilitated live coding sessions on DOM manipulation, CSS flexbox/grid, and async JavaScript</li>
+            <li>Reviewed 12+ student projects weekly with feedback on WCAG 2.1 accessibility and semantic HTML</li>
+            <li>Co-developed curriculum materials that improved student engagement by 25% per course surveys</li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
